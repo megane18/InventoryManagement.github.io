@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Main Page</title>
+</head>
+<body>
+
+
+
+
+     <div class="row" id="dashboard">
+         <div class="column">
+             <a href="#">Reporting Sales</a>
+         </div>
+       
+         <div class="column">
+             <a href="#">Inventory</a>
+         </div>
+       
+         <div class="column">
+             <a href="#">View All Inventory</a>
+         </div>
+       
+           <div class="column">
+             <a href="#">Change Inventory item</a>
+           </div>
+       
+             <div class="column">
+               <a href="#">About US</a>
+             </div>
+       
+                 <div class="column">
+                   <a href="#">Read ME</a>
+                 </div>
+        
+        
+     </div>
+     <div class="exitBtn">
+     <a href="#" id="exitButton">Exit</a>
+     </div>
+
+
+    
+
+
+
+    
+      
+  <script>
+    // Retrieve user's name from local storage
+    var username = localStorage.getItem('username');
+    if (username) {
+      document.write('<h1>Welcome, ' + username + '!</h1>');
+    } else {
+      // If user's name is not found, redirect to sign-up page
+      window.location.href = 'index.html';
+    }
+  </script>
+  <button id="goback" onclick="goToSignUpPage()">Go back to Sign Up</button>
+
+  <script>
+    function goToSignUpPage() {
+      window.location.href = 'index.html';
+    }
+  </script>
+
+    <script>
+        // JavaScript to handle the exit button
+        document.getElementById("exitButton").addEventListener("click", function() {
+            window.location.href = "about:blank"; // Opens a blank page, effectively exiting the website
+            // Alternatively, you can use window.close() to close the current tab/window
+            window.close();
+        });
+    </script>
+<script>
+    const inputFieldEl = document.getElementById("input-field")
+  const addButtonEl = document.getElementById("add-items")
+
+  addButtonEl.addEventListener("Click", function(){
+    console.log("it works")
+
+  });
+</script>
+</body>
+</html>

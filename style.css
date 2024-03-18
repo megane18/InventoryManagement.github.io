@@ -1,0 +1,274 @@
+html {
+  height: 90%;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://img.freepik.com/premium-photo/warehouse-aisle-store-room-with-storage-shelves-boxes-packages-ai-generative_361816-7416.jpg);
+  /*background-color: #696783;*/
+  /*background-color: #9ac8e5;*/
+ 
+  
+  
+}
+#welcome-container {
+    text-align: center; /* Center the content horizontally */
+    margin-bottom: 20px; /* Add margin to separate it from the buttons */
+}
+
+/* Style the welcome message */
+h1 {
+top: 10px;
+  right: 10px;
+  color: pink;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  text-align: right;
+  position: fixed; /* Al
+    /*color: pink;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    display: inline-block; /* Ensure the welcome message behaves as a block element */
+}
+
+
+.container {
+  width: 200px;
+  padding: 100px;
+  /*background-color: #99ada8;*/
+  border: 2px solid #9fadad;
+  margin-top: 5.8%;
+  background-image: url(https://cdn3.vectorstock.com/i/1000x1000/36/27/abstract-yellow-light-line-on-dark-grey-background-vector-23723627.jpg);
+  background-color: #cccccc;
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+}
+
+.login-title {
+  margin: 25px;
+  text-align: center;
+  color: white;
+  background-color: #636aa1;
+}
+
+#signup-form{
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+input,
+button {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 4%;
+  border: 2px solid #ccc;
+}
+
+button, #goback {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  
+}
+
+button:hover, #goback:hover{
+  background-color: #0056b3;
+}
+
+/*#goback{
+
+  padding: 11px;
+  margin-top: 53cap;
+  color: white;
+  background-color: #3b82ce;
+  /*top: 525px;*/
+  /*left: 40px;
+  position: relative;
+  border: 2px solid #007bff;
+  
+  /*margin-top: 140px;
+  
+  position: relative;
+  top: 27rem;
+  
+  /*padding: 15px;*/
+  /*border-radius: 4%;
+  border: 2px solid #29a39b;
+  color: #fff;
+  cursor: grab;*/
+
+
+/* Style the rows and columns */
+/* Style the rows and columns */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the columns horizontally */
+  margin: 24%;
+}
+
+.column {
+    flex: 1;
+    padding: 20px;
+    margin: 0 20px 10px 10px; /* Add margin to all sides except the top to prevent movement */
+}
+
+.column a {
+   display: block;
+    width: 90%;
+    height: 90%;
+    padding-top: 10px;
+
+
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #b3b8bc;
+    border: 2px solid #515252;
+    border-radius: 9px;
+}
+
+.column a:hover, #exitButton:hover {
+    background-color: #748290;
+}
+
+
+
+#goback{
+  padding: 14px;
+
+  color: white;
+  background-color: #3b82ce;
+  position: fixed;
+  bottom: 2px;
+  right: 120px;
+  border: 2px solid #007bff;
+  
+}
+#exitButton{
+
+  padding: 14px;
+  
+  color: white;
+  background-color: #3b82ce;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  border: 2px solid #007bff;
+  /*padding: 10px;
+  margin: 40px;
+  
+  color: white;
+  background-color: #3b82ce;
+  top: 525px;
+  left: -40px;
+  position: relative;
+  border: 2px solid #007bff;*/
+
+}
+root {
+  /* Light Theme */
+  --primary-font: "Poppins", sans-serif;
+  --primary-bg-color: #ffffff;
+  --primary-text-color: #000000;
+  --secondary-color: #575757;
+  --btn-bg-color: #2196f3;
+  --cta-hover-color: #167bce;
+  --btn-bg-light: #eeeeee;
+
+  /* Dark Theme */
+  --dark-primary-bg-color: #222222;
+  --dark-primary-text-color: #ffffff;
+  --dark-secondary-color: #828282;
+  --dark-btn-bg-color: #1e88e5;
+  --dark-cta-hover-color: #0d5e8c;
+  --dark-btn-bg-light: #eeeeee;
+}
+
+.dark-theme {
+  --primary-bg-color: var(--dark-primary-bg-color);
+  --primary-text-color: var(--dark-primary-text-color);
+  --secondary-color: var(--dark-secondary-color);
+  --btn-bg-color: var(--dark-btn-bg-color);
+  --cta-hover-color: var(--dark-cta-hover-color);
+  --btn-bg-light: var(--dark-btn-bg-light);
+}
+
+
+.theme-btn {
+  position: relative;
+  left: 8.5rem;
+}
+
+
+
+.dark {
+  display: flex;
+   flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.dark {
+  gap: 1rem;
+}
+
+
+
+
+
+.theme-btn {
+  height: 1.5rem;
+}
+
+
+.theme-btn{
+  cursor: pointer;
+}
+
+
+
+
+.dark {
+  margin-top: 2rem;
+}
+
+
+footer {
+  margin: 3rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+  
