@@ -7,47 +7,41 @@
   <title>Main Page</title>
 </head>
 <body>
+  
 
+   <header>
+       <h4>Sweet Euphoria</h1>
+   </header>
 
+   <main>
+       <section id="inventorySection">
+           <h2>Inventory</h2>
+           <ul id="inventoryList"></ul>
+       </section>
 
+       <section id="salesRecordsSection">
+           <h2>Sales Records</h2>
+           <ul id="salesRecordsList"></ul>
+       </section>
 
-     <div class="row" id="dashboard">
-         <div class="column">
-             <a href="#">Reporting Sales</a>
-         </div>
-       
-         <div class="column">
-             <a href="#">Inventory</a>
-         </div>
-       
-         <div class="column">
-             <a href="#">View All Inventory</a>
-         </div>
-       
-           <div class="column">
-             <a href="#">Change Inventory item</a>
-           </div>
-       
-             <div class="column">
-               <a href="#">About US</a>
-             </div>
-       
-                 <div class="column">
-                   <a href="#">Read ME</a>
-                 </div>
-        
-        
+       <section id="inputSection">
+           <h2>Record Sale</h2>
+           <form id="saleForm">
+               <label for="sku">SKU:</label>
+               <input type="text" id="sku" name="sku" required>
+               <label for="quantity">Quantity Sold:</label>
+               <input type="number" id="quantity" name="quantity" min="1" required>
+               <button type="submit">Record Sale</button>
+           </form>
+       </section>
+   </main>
+         <!-- Add more columns as needed -->
      </div>
      <div class="exitBtn">
      <a href="#" id="exitButton">Exit</a>
      </div>
 
-
-    
-
-
-
-    
+     
       
   <script>
     // Retrieve user's name from local storage
@@ -72,17 +66,8 @@
         document.getElementById("exitButton").addEventListener("click", function() {
             window.location.href = "about:blank"; // Opens a blank page, effectively exiting the website
             // Alternatively, you can use window.close() to close the current tab/window
-            window.close();
+            // window.close();
         });
     </script>
-<script>
-    const inputFieldEl = document.getElementById("input-field")
-  const addButtonEl = document.getElementById("add-items")
-
-  addButtonEl.addEventListener("Click", function(){
-    console.log("it works")
-
-  });
-</script>
 </body>
 </html>
