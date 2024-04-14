@@ -1,0 +1,401 @@
+html {
+  height: 80%;
+  width: 90%;
+  
+}
+ 
+
+body{
+  background-color: #81b4c5;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+  background-color: #e7e4e4;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 16px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+
+
+
+/**/
+.container {
+  height: 49%;
+  width: 23%;
+  padding-top: 40px;
+  border: 2px solid #9fadad;
+  margin-top: 20px;
+  background-color: #636aa1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Removed comment block here */
+
+.login-title {
+ padding-bottom: 10px;
+  margin: 2px;
+  text-align: center;
+  color: white;
+  background-color: #636aa1;
+}
+
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+ 
+  height: 10px;
+}
+
+input,
+button {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+}
+
+
+#sign-up-button{
+  background-color: #ac7fd2;
+  color: #fff;
+  
+  
+  
+  
+}
+
+#sign-up-button:hover{
+  color: #636aa1;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: grabbing;
+ 
+}
+
+
+#goback {
+  padding: 14px;
+  color: #476d85;
+  background-color: #ededed;
+  position: fixed;
+  bottom: 2px;
+  left: 70px;
+  /*border: 2px solid #007bff;*/
+  border: dotted black;
+  font-weight: bold;
+}
+
+#exitButton {
+  
+  
+  padding: 10px;
+  color: #476d85;
+   border: dotted black;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  font-weight: bold;
+  /*border: 2px solid #007bff;*/
+}
+
+#exitButton:hover, #goback:hover {
+  color: #813232;
+ 
+  cursor: grab;
+}
+
+  .nav-bar ul{
+ 
+
+    list-style-type: none;
+    margin: 10px;
+    overflow: hidden;
+    list-style: none;
+    width: 95%;
+  }
+  .nav-bar ul li{
+    float: left;
+    padding: 3.3%;
+    margin: 10px;
+    
+  }
+
+  .nav-bar ul li a{
+   
+    text-decoration: none;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #476d85;
+    display: block;
+     padding: 10px 10px;
+    
+   
+  }
+  .nav-bar ul li a:hover{
+    font-weight: bold;
+    color: #813232;
+  }
+  
+  #theme-button{
+    text-decoration: underline wavy #853882 5px;
+    font: 16px;
+    color: cadetblue;
+    padding: 5px 4px;
+    margin: 4.1%;
+    
+    border: dotted black;
+   
+   
+    
+  }
+  #theme-button:hover{
+    color: #813232;
+  }
+  .dark-mode{
+    background-color: #000000;
+    color: white;
+  }
+
+/* Style the section */
+/*#number_two {
+  
+  /*background-color: #f2f2f2;*/
+ 
+/* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 20%;
+  
+  
+
+
+  
+  /*padding: 15px 25px;
+  margin: 45px 15px;*/
+
+
+
+/* Style the buttons 
+#number_two .icon-button {
+  padding: 5% 5%;
+  /*margin: 12% 2%;
+  margin: 5% 2%;
+  
+
+  background-color: #8f6b9e;
+  color: snow;
+  border: 2.5px solid #e5e1e1;
+  border-radius: 5px;
+
+
+  cursor: pointer;
+}
+
+#number_two .icon-button:hover {
+  background-color: #dd226d;
+}
+#number_two {
+  text-align: center; /* Center-align the buttons */
+/*
+
+#number_two .icon-button {
+  padding: 5% 5%;
+  margin: 5% 2%; /* Adjusted margin to 5% on top and bottom, and 2% on the sides */
+  /*background-color: #8f6b9e;
+  color: snow;
+  border: 2.5px solid #e5e1e1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#number_two button:nth-child(-n+2) {
+  display: inline-block; /* Display the first two buttons inline */
+  /*margin-bottom: 10%; /* Add some space between the buttons */
+/*}
+
+#number_two button:nth-child(n+3) {
+  display: block; /* Display the rest of the buttons as block */
+
+#number_two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.col {
+  flex: 1;
+  margin: 15%;
+  text-align: center;
+}
+
+#number_two .icon-button {
+  padding: 35px 30px; /* Adjust as needed */
+  margin: 10px; /* Adjust as needed */
+  background-color: #8f6b9e;
+  color: snow;
+  border: 2.5px solid #e5e1e1;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 400%; /* Adjust as needed */
+}
+
+
+
+
+
+/*.images{
+  padding: 15px;
+  margin: 12% 32%;
+   position: relative;
+   left: 30%;
+}
+
+ p{
+ margin: 1%;
+   padding: 4%;
+}
+
+#number_one img{
+  position: relative;
+  /*left:  5%;*/
+  /*top:  -10%;*/
+ /* margin: 12% 38px;
+  
+  
+ 
+ 
+}
+
+
+
+
+img {
+  --s: 200px; /* the image size */
+
+  /*width: var(--s);
+  height: var(--s);/* better than aspect-ratio in case the image has a height attribute */
+  /*box-sizing: border-box;
+  object-fit: cover;
+  cursor: pointer;
+  transition: .5s;
+  margin: 4px;
+}
+img.left {
+  object-position: right;
+  padding-left: var(--s);
+  background: #542437;
+}
+img.right {
+  object-position: left;
+  padding-right: var(--s);
+  background: #8A9B0F;
+}
+img.top {
+  object-position: bottom;
+  padding-top: var(--s);
+  background: #E94E77;
+}
+img.bottom {
+  object-position: top;
+  padding-bottom: var(--s);
+  background: #7A6A53;
+}
+
+img:hover {
+  padding: 0;
+}*/
+/*.images {
+  padding: 0%;
+  margin: 10% auto;
+  position: relative;
+  left: 27%;
+  width: 37%; /* Adjust width as needed */
+  
+/*}
+
+p {
+  margin: 1%;
+  padding: 1%;
+  font-size: 16px;
+  background-color: #ffa3a3;
+  
+}
+
+#number_one {
+  display: inline;
+  width: 40%;
+  
+  /* Adjust width as needed */
+/*}
+
+#number_one img {
+  position: relative;
+  /*left:  5%;*/
+  /*top:  -10%;*/
+  /*margin: 16px;
+  top: 10%;
+}
+
+img {
+  --s: 200px; /* the image size */
+  /*width: var(--s);
+  height: var(--s); /* better than aspect-ratio in case the image has a height attribute */
+  /*box-sizing: border-box;
+  object-fit: cover;
+  cursor: pointer;
+  transition: .5s;
+}
+
+img.left {
+  object-position: right;
+  padding-left: var(--s);
+  background: #542437;
+}
+
+img.right {
+  object-position: left;
+  padding-right: var(--s);
+  background: #8A9B0F;
+}
+
+img.top {
+  object-position: bottom;
+  padding-top: var(--s);
+  background: #E94E77;
+}
+
+img.bottom {
+  object-position: top;
+  padding-bottom: var(--s);
+  background: #7A6A53;
+}
+
+img:hover {
+  padding: 0;
+}
