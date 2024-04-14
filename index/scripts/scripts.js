@@ -10,6 +10,14 @@ themeButton.addEventListener("click", toggleDarkMode);
   function goToSignUpPage() {
     window.location.href = 'index.html';
   }
+  function reportPage() {
+    window.location.href = 'report.html';
+  }
+
+  function salesPage(){
+    window.location.href = 'sales.html';
+  }
+  
 
 
 
@@ -19,4 +27,17 @@ themeButton.addEventListener("click", toggleDarkMode);
     // Alternatively, you can use window.close() to close the current tab/window
     // window.close();
   });
+  document.getElementById("goback").addEventListener("click", function () {
+    window.location.href = "index.html"; 
+  });
 
+  document.getElementById("icon-button-one").addEventListener("click", function () {
+    window.location.href = "report.html"; 
+  });
+  document.getElementById("icon-button-two").addEventListener("click", function () {
+    window.location.href = "sales.html"; 
+  });
+
+  
+  //"window.location.href='inventory.html'"
+ 

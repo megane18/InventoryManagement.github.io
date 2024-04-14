@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Main Page</title>
 
 
@@ -30,19 +30,20 @@
     <section id="number_two">
       <div class="row">
         <div class="col">
-          <button onclick="window.location.href='inventory.html'" class="icon-button"><i class="fas fa-chart-line"></i> Sales</button>
+          <button 
+          onclick="window.location.href='sales.html'" id="icon-button-two"><i class="fas fa-chart-line"></i> Sales</button>
         </div>
         <div class="col">
-          <button onclick="window.location.href='sales.html'" class="icon-button"><i class="fas fa-box"></i> Inventory</button>
+          <button id="icon-button-three"><i class="fas fa-box"></i> Inventory</button>
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <button onclick="window.location.href='report.html'" class="icon-button"><i class="fas fa-file-alt"></i> Reports</button>
+          <button onclick="reportPage()"  id="icon-button-one"><i class="fas fa-file-alt"></i> Reports</button>
         </div>
-        <!--<div class="col">
-          <button onclick="window.location.href='read.html'" class="icon-button"><i class="fas fa-address-book"></i> Contacts</button>
-        </div>-->
+        <div class="col">
+          <button onclick="window.location.href='contacts.html'" id="icon-button-four"><i class="fas fa-address-book"></i> Contacts</button>
+        </div>
       </div>
     </section>
 
@@ -55,7 +56,7 @@
 
 
  
-  <script src="scripts.js"></script>
+  <script type="module" src="scripts/scripts.js"></script>
 </body>
 
 </html>

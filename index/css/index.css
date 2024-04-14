@@ -254,7 +254,8 @@ button {
   text-align: center;
 }
 
-#number_two .icon-button {
+#number_two .icon-button,#icon-button-one, #icon-button-three,#icon-button-two,
+#icon-button-four {
   padding: 35px 30px; /* Adjust as needed */
   margin: 10px; /* Adjust as needed */
   background-color: #8f6b9e;

@@ -72,4 +72,17 @@ const inventory = [
   
   // Generate the report when the page loads
   generateReport();
+
+  function goToMain(){
+    window.location.href = 'sales.html';
+  } 
+  
+
+  document.getElementById("left-button").addEventListener("click", function () {
+    window.location.href = "main.html"; 
+  });
+
+  document.getElementById("right-button").addEventListener("click", function () {
+    window.location.href = "about:blank"; 
+  });
   

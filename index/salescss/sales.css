@@ -3,21 +3,16 @@ html, body {
     padding: 0;
     font-family: 'Rubik', sans-serif;
     background-color: azure;
-  }
-  
-  .container {
+}
+
+.inventory-container, .sales-container {
     display: flex;
     flex-direction: column;
     max-width: 320px;
     margin: 30px auto;
-  }
-  
-  h2 {
-    text-align: center;
-    color: #AC485a;
-  }
-  
-  input {
+}
+
+input {
     color: beige;
     background-color: #dce1eb;
     border: 0;
@@ -26,9 +21,9 @@ html, body {
     font-size: 20px;
     text-align: center;
     margin: 10px 0;
-  }
-  
-  button {
+}
+
+button {
     color: #FDFDFD;
     background-color: #AC485a;
     border: 0;
@@ -36,25 +31,37 @@ html, body {
     border-radius: 8px;
     font-size: 20px;
     text-align: center;
-    margin: 10px 0;
-    cursor: pointer;
-  }
-  
-  ul {
+}
+
+ul {
     list-style-type: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-  }
-  
-  ul li {
+}
+
+ul li {
     background-color: #FFFDF8;
     padding: 12px;
     border-radius: 8px;
     flex-grow: 1;
     text-align: center;
     box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bottom-buttons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
   }
   
+  .left-button, .right-button {
+    flex-grow: 1;
+    margin: 0 5px;
+  }
