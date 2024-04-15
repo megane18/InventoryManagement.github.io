@@ -21,13 +21,24 @@ label {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"]{
     padding: 16px;
     margin-bottom: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
 
+button[type="submit"] {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  background-color: #ac7fd2;
+  color: #fff;
+}
+#login-section {
+  display: none;
+}
 
 
 
