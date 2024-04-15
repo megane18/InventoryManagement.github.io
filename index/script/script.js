@@ -47,7 +47,7 @@ signupForm.addEventListener("submit", function(event) {
                   alert(`Admin ${username} !  Welcome Back :) `);
                   // Redirect to main page (replace 'main.html' with your actual main page URL)
                   window.location.href = 'main.html';
-                  /*showAlert("Welcome back, admin " + username, "blue")*/
+                  //showAlert("Welcome back, admin " + username, "blue")
               })
               .catch((error) => {
                   const errorCode = error.code;
@@ -93,41 +93,5 @@ function isValidPassword(password) {
     return passwordRegex.test(password);
 }
 
-// Function to show alert
-/*function showAlert(message, color) {
-  const alertDiv = document.createElement("div");
-  alertDiv.textContent = message;
-  alertDiv.style.backgroundColor = color;
-  alertDiv.style.color = "white";
-  alertDiv.style.padding = "10px";
-  alertDiv.style.borderRadius = "5px";
-  alertDiv.style.position = "fixed";
-  alertDiv.style.top = "10%";
-  alertDiv.style.left = "50%";
-  alertDiv.style.transform = "translate(-50%, -50%)";
-  alertDiv.style.zIndex = "1000";
-  document.body.appendChild(alertDiv);
-  setTimeout(() => {
-      document.body.removeChild(alertDiv);
-  }, 800);
-}
-*/
 
-
-
-document.getElementById('signup-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    // Perform form validation
-    var username = document.getElementById('username').value;
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-  
-    localStorage.setItem('username', username);
-    //localStorage.setItem('name', name);
-  
-    // Redirect to main page (replace 'main.html' with your actual main page URL)
-    window.location.href = 'main.html';
-  });
-
-  
   
