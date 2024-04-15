@@ -1,4 +1,3 @@
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-database.js";
@@ -116,7 +115,7 @@ function isValidPassword(password) {
 
 
 
-/*document.getElementById('signup-form').addEventListener('submit', function(event) {
+document.getElementById('signup-form').addEventListener('submit', function(event) {
     event.preventDefault();
     // Perform form validation
     var username = document.getElementById('username').value;
@@ -128,7 +127,7 @@ function isValidPassword(password) {
   
     // Redirect to main page (replace 'main.html' with your actual main page URL)
     window.location.href = 'main.html';
-  });*/
+  });
 
   
   
