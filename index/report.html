@@ -18,7 +18,7 @@
     <!-- It will display the sales report here -->
   </ul>
   <p>Total Sales: <span id="total-sales"></span></p>
-  <button onclick="downloadReport()">Download Report</button>
+  <button id= "download-button" onclick="downloadReport()">Download Report</button>
 </div>
 
 <div class="bottom-buttons">
@@ -26,6 +26,6 @@
   <button id="right-button" onclick="exit()">Exit</button>
 </div>
 
-<script src="reportjs/report.js"></script>
+<script type="module" src="reportjs/report.js"></script>
 </body>
 </html>

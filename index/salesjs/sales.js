@@ -113,7 +113,7 @@ const restockedItems = new Set();
 
 
 // Keep track of already restocked items
-function fetchSalesData() {
+/*function fetchSalesData() {
   const salesRef = ref(database, 'sales');
   onValue(salesRef, (snapshot) => {
       const salesData = snapshot.val();
@@ -135,10 +135,46 @@ function fetchSalesData() {
               }
           });
           // Update the display after restocking
-         // displayInventory();
+          //displayInventory();
       }
   });
+}*/
+
+const restockInterval = 24 * 60 * 60 * 1000; // 24 hours in milliseconds
+let lastRestockTime = 0;
+
+function fetchSalesData() {
+  const currentTime = new Date().getTime();
+  // Check if enough time has passed since the last restock
+  if (currentTime - lastRestockTime >= restockInterval) {
+    const salesRef = ref(database, 'sales');
+    onValue(salesRef, (snapshot) => {
+        const salesData = snapshot.val();
+        if (salesData) {
+            // Iterate through the sales data
+            Object.values(salesData).forEach(saleRecord => {
+                const item = inventory.find(item => item.sku === saleRecord.sku);
+                if (item && !restockedItems.has(item.sku)) {
+                    // Check if the quantity sold falls within the range for automatic restocking
+                    if (saleRecord.quantitySold >= 7 && saleRecord.quantitySold <= 50) {
+                        // Perform automatic restocking by setting the quantity to 50
+                        item.quantity = 50;
+                        //console.log
+                        alert(`Automatically restocked ${item.name} to 50 items.`);
+                        // Update inventory in the database
+                        updateInventoryInDatabase(item);
+                        // Add the item to the set of restocked items
+                        restockedItems.add(item.sku);
+                    }
+                }
+            });
+            // Update the last restock time
+            lastRestockTime = currentTime;
+        }
+    });
+  }
 }
+
 
 
 // Function to update inventory in the database
