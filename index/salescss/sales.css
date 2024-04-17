@@ -46,7 +46,7 @@ input {
     border-radius: 8px;
     font-size: 20px;
     position: relative;
-    left: 42%;
+    left: 30%;
     
     
     
@@ -94,13 +94,12 @@ ul li {
   #left-button, #right-button {
     flex-grow: 0;
     margin: 4px 5px;
-    padding: 20px;
     color: #FDFDFD;
     background-color: #AC485a;
     border: 0;
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
-    font-size: 20px;
+    font-size: 18px;
   }
  
   
