@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Report</title>
+<link rel="stylesheet" href="reportcss/styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Sales Report</h2>
+  <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Enter your name">
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter your email">
+  <ul id="report-list">
+    <!-- It will display the sales report here -->
+  </ul>
+  <p>Total Sales: <span id="total-sales"></span></p>
+  <button id= "download-button" onclick="downloadReport()">Download Report</button>
+</div>
+
+<div class="bottom-buttons">
+  <button id="left-button" onclick="goToMain()">Go to Main</button>
+  <button id="right-button" onclick="exit()">Exit</button>
+</div>
+
+<script type="module" src="reportjs/report.js"></script>
+</body>
+</html>

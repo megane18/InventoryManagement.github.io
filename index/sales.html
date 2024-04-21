@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Inventory Sales Tracker</title>
+ <link rel="stylesheet" href="salescss/sales.css">
+ </head>
+ <body>
+
+ <div class="inventory-container">
+   <h2>Inventory</h2>
+   <ul id="inventory-list">
+     <!-- Inventory items will be dynamically added here -->
+   </ul>
+ </div>
+
+ <div class="sales-container">
+   <h2>Sales Tracking</h2>
+   <div>
+     <label for="sku">SKU:</label>
+     </div>
+ <div>
+     <input type="text" id="sku">
+    </div>
+  </div>
+   <div class="quantity-container">
+     <label for="quantity">Quantity Sold:</label>
+     <input type="number" id="quantity">
+   </div>
+   
+ <form id="salesReportForm">
+  <label for="startTime">Start Time:</label>
+  <input type="datetime-local" id="startTime" required><br>
+  <label for="endTime">End Time:</label>
+  <input type="datetime-local" id="endTime" required><br>
+  <div>
+    <button type="submit" class="recordSales" onclick="recordSale()">Record Sale</button>
+  </div>
+</form>
+
+
+
+</div>
+
+ <div class="bottom-buttons">
+  <button id="left-button" onclick="goToMain()">Go to Main</button>
+  <button id="right-button" onclick="exit()">Exit</button>
+</div>
+
+ <script type="module" src="salesjs/sales.js"></script>
+ </body>
+ </html>

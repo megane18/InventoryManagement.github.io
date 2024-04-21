@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Main Page</title>
+
+
+</head>
+
+<body>
+
+ <div class="nav-bar">
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <!--<li><a href="#">Contact</a></li>-->
+      <button id="theme-button"><i id="theme-icon" class="fas fa-sun"></i></button>
+
+    </ul>
+  </div>
+
+
+  
+  
+
+  <section id="number_two">
+    <section id="number_two">
+      <div class="row">
+        <div class="col">
+          <button 
+          onclick="window.location.href='sales.html'" id="icon-button-two"><i class="fas fa-chart-line"></i> Sales</button>
+        </div>
+        <div class="col">
+          <button onclick="window.location.href='inventory.html'" id="icon-button-three"><i class="fas fa-box"></i> Inventory</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button onclick="reportPage()"  id="icon-button-one"><i class="fas fa-file-alt"></i> Reports</button>
+        </div>
+        <div class="col">
+          <button id="downloadBtn"><i class="fas fa-book"></i> README</button>
+        </div>
+      </div>
+    </section>
+
+
+ 
+  
+  <button id="exitButton" onclick="exitPage()">Exit</button>
+   <button id="goback" onclick="goToSignUpPage()">Go back to Sign Up</button>
+
+
+
+ 
+  <script type="module" src="scripts/scripts.js"></script>
+</body>
+
+</html>
